@@ -1,0 +1,47 @@
+header, p, footer, nav {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90vh;
+    top: 50px;
+}
+
+p {
+    flex-grow: 2;
+}
+
+header {
+    top: 10px;
+}
+
+footer {
+    bottom: 5px;
+}
+
+nav a {
+}
+
+main {
+}
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}

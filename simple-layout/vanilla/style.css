@@ -1,0 +1,34 @@
+header, main, footer, nav {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav {
+    float: left;
+    min-height: 90vh;
+    top: 50px;
+}
+
+header {
+    top: 10px;
+}
+
+footer {
+    bottom: 5px;
+}
+
+nav a {
+    display: list-item;
+    list-style: none;
+}
+
+main {
+    overflow: auto;
+}
+
+.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+}

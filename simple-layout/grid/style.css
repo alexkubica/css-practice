@@ -1,0 +1,44 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+.grid {
+    display: grid;
+    grid:
+        "header header header"
+        "nav main main"
+        "nav main main"
+        "footer footer footer";
+    height: 100%;
+}
+
+header, main, footer, nav {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav a {
+}
+
+main {
+    grid-area: main;
+    overflow-y: scroll;
+}
